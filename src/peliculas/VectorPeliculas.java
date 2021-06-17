@@ -53,9 +53,9 @@ public class VectorPeliculas {
             for (int j = 0; j < (siguientePelicula-1-i); j++) {
 
                 if (ascendente) {
-                    cambio = (listaPeliculas[j].getNombre().compareTo(listaPeliculas[j+1].getNombre()) > 0 );
+                    cambio = (listaPeliculas[j].getNombre().compareToIgnoreCase(listaPeliculas[j+1].getNombre()) > 0 );
                 } else { 
-                    cambio = (listaPeliculas[j].getNombre().compareTo(listaPeliculas[j+1].getNombre()) < 0 );
+                    cambio = (listaPeliculas[j].getNombre().compareToIgnoreCase(listaPeliculas[j+1].getNombre()) < 0 );
                 }
 
                 if(cambio){
@@ -66,6 +66,10 @@ public class VectorPeliculas {
                 }
             }
         }
+
+    }
+
+    public void mostrarPeliculasDisponibles() {
 
     }
 

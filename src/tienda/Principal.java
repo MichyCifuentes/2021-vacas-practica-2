@@ -17,7 +17,7 @@ public class Principal {
         int menu = 0;
 
         while(menu >= 0){
-            System.out.println("Bienvenido a memorabilia \n\n");
+            System.out.println("\n\nBienvenido a memorabilia \n\n");
             System.out.println("1) Ingreso de clientes");
             System.out.println("2) Mostrar clientes");
             System.out.println("3) Ordenar Clientes Ascendente");
@@ -60,11 +60,11 @@ public class Principal {
             if (menu == 6) {
                 tablaPeliculas.mostrarPeliculas();
             }
-            if (menu == 5) {
+            if (menu == 7) {
                 tablaPeliculas.ordenarPeliculaPorNombre(true);
                 tablaPeliculas.mostrarPeliculas();
             }
-            if (menu == 6) {
+            if (menu == 8) {
                 tablaPeliculas.ordenarPeliculaPorNombre(false);
                 tablaPeliculas.mostrarPeliculas();
             }
